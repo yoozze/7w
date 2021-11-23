@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>7W - Artificial Intelligence powered Digital Twins</title>
+        <meta
+            name="description"
+            content="7W creates tailor-made Digital Twins of complex ecosystems, which enable simulation and prediction."
+        />
+
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="stylesheet" href="assets/css/responsive.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            rel="stylesheet"
+        />
+
+        <script>
+            var className = 'js';
+            if ('IntersectionObserver' in window && 'IntersectionObserverEntry' in window) {
+                className += ' iobserver';
+            }
+            document.documentElement.className = className;
+        </script>
+    </head>
+    <body id="homepage">
+        <div class="page-wrapper">
+            <!-- Header start -->
+            <header id="site-header" class="site-header color-light">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-expand-lg row justify-content-between mx-n3">
+                        <div class="col-auto px-3">
+                            <a class="navbar-brand" href="#">
+                                <img src="assets/images/logo.svg" alt="7W" width="107" height="20">
+                            </a>
+                            <span class="sr-only">Home</span>
+                        </div>
+                        <div class="col-auto d-lg-none px-3">
+                            <button
+                                class="btn navbar-toggler"
+                                type="button"
+                                data-toggle="collapse"
+                                data-target="#navbar-content"
+                                aria-controls="navbar-content"
+                                aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="navbar-collapse collapse-main collapse col-auto justify-content-lg-end" id="navbar-content">
+                            <ul class="navbar-nav main-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#about">About 7W</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#features">Features</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#concept">Concept</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#clients">Clients</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#usecases">Usecases</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+            <!-- Header end -->
+
+            <!-- Main start -->
+            <main>
+                <!-- Banner start -->
+                <div id="home-banner" class="banner text-light">
+                    <div class="container-fluid position-relative h-100">
+                        <div class="banner-content d-flex flex-column justify-content-center align-items-center h-100">
+                            <h1 class="page-title">
+                                <span class="sr-only">7W</span>
+                                <img src="assets/images/logo-light.svg" alt="7W" width="398" height="75">
+                            </h1>
+                            <p class="page-subtitle text-center mb-0">Artificial Intelligence powered Digital Twins</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Banner end -->
+
+                <!-- Contact Us start -->
+                <section class="section section-contact bg-theme-light overflow-hidden">
+                    <div class="container-fluid">
+                        <div class="section-head">
+                            <div class="row justify-content-center">
+                                <div class="text-box col-lg-10 col-xl-8 col-x2l-6">
+                                    <h2 class="section-title">Contact Us</h2>
+                                    <p class="section-description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-body">
+                            <form class="contact-form row justify-content-center needs-validation" action="#" novalidate>
+                                <div class="col-lg-8 col-xl-8">
+                                    <div class="form-row mx-n2">
+                                        <div class="form-group col-md-6 px-2">
+                                            <label class="sr-only" for="name-form-field">Name</label>
+                                            <input class="form-control" type="text" id="name-form-field" placeholder="Name" required />
+                                            <div class="invalid-feedback">Please provide your name.</div>
+                                        </div>
+                                        <div class="form-group col-md-6 px-2">
+                                            <label class="sr-only" for="email-form-field">E-mail</label>
+                                            <input class="form-control" type="email" id="email-form-field" placeholder="E-mail" required />
+                                            <div class="invalid-feedback">Please provide a valid e-mail.</div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row mx-n2">
+                                        <div class="form-group col px-2 mb-0">
+                                            <label class="sr-only" for="message-form-field">Message</label>
+                                            <textarea class="form-control" id="message-form-field" placeholder="Message" rows="3" required></textarea>
+                                            <div class="invalid-feedback">Message is required.</div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row justify-content-center mx-n2">
+                                        <div class="col-12 col-sm-8 col-md-6 px-2">
+                                            <button class="send-message-button btn btn-theme d-flex align-items-center w-100 mt-5" type="submit">
+                                                <span class="mr-auto">Send message</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+                <!-- Contact Us end -->
+            </main>
+            <!-- Main end -->
+
+            <!-- Footer start -->
+            <footer class="site-footer color-light bg-theme">
+                <div class="container-fluid footer-body">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-sm-auto mr-sm-3 mb-4">
+                            <img src="assets/images/logo-light.svg" alt="7W" width="107" height="20">
+                        </div>
+                        <div class="col-sm-auto mb-4">
+                            <ul class="nav footer-nav flex-column flex-sm-row mx-sm-n3">
+                                <li class="nav-item">
+                                    <a class="nav-link px-0 px-sm-3" href="#about">About 7W</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link px-0 px-sm-3" href="#features">Features</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link px-0 px-sm-3" href="#concept">Concept</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link px-0 px-sm-3" href="#clients">Clients</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link px-0 px-sm-3" href="#usecases">Usecases</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid footer-foot">
+                    <div class="row justify-content-sm-between align-items-sm-end">
+                        <div class="col-sm-auto">
+                            <p class="footer-contacts-label d-sm-inline-block_ sr-only_ font-weight-bold text-uppercase mb-1" id="footer-contacts-label">Contact us</p>
+                            <dl class="footer-contacts d-sm-inline-block_ mb-0" aria-labelledby="footer-contacts-label">
+                                <div class="d-sm-inline-block_ mb-1">
+                                    <dt class="d-inline-block sr-only">Phone</dt>
+                                    <dd class="d-inline-block mb-0">
+                                        <a href="tel:+44345678903">+44 345 678 903</a>
+                                    </dd>
+                                </div>
+                                <div class="d-sm-inline-block_">
+                                    <dt class="d-inline-block sr-only">E-mail</dt>
+                                    <dd class="d-inline-block mb-0">
+                                        <a href="mailto:info@7w.ai">info@7w.ai</a>
+                                    </dd>
+                                </div>
+                            </dl>
+                        </div>
+                        <div class="col-sm-auto mt-4 mt-sm-0">
+                            <p class="copyright mb-0 text-right-xs">&copy; 7W 2021. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- Footer end -->
+        </div>
+
+        <script src="assets/js/jquery-3.3.1.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/slick.min.js"></script>
+        <!-- <script src="assets/js/js.cookie.js"></script> -->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
