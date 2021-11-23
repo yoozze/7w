@@ -521,7 +521,6 @@ textarea.form-control {
 }
 
 .send-message-button {
-    /* height: 50px; */
     padding: 16px 30px;
     font-size: 0.875rem;
     font-weight: 700;
@@ -534,3 +533,30 @@ textarea.form-control {
     height: 14px;
     background: url('../images/arrow-right.svg') no-repeat center;
 }
+
+/* ## Understanding and forecast */
+.section-understanding {
+    position: relative;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.section-understanding::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.6;
+    background: url('../images/crossroads.jpg') no-repeat center;
+    background-size: cover;
+    mix-blend-mode: soft-light;
+}
+
+.section-understanding .section-description {
+    font-size: 1.875rem;
+    font-weight: 700;
+    font-style: italic;
+}
+

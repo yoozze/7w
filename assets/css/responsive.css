@@ -111,6 +111,11 @@
         padding-bottom: 90px;
     }
 
+    .section-understanding {
+        padding-top: 140px;
+        padding-bottom: 140px;
+    }
+
     .section-head {
         margin-bottom: 60px;
     }
@@ -201,6 +206,11 @@
     .section {
         padding-top: 120px;
         padding-bottom: 120px;
+    }
+
+    .section-understanding {
+        padding-top: 190px;
+        padding-bottom: 190px;
     }
 
     .section-box {
