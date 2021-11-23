@@ -534,6 +534,36 @@ textarea.form-control {
     background: url('../images/arrow-right.svg') no-repeat center;
 }
 
+/* ## Section features */
+.feature-list li {
+    font-size: 1.3125rem;
+}
+
+.feature-list li::before {
+    content: '';
+    display: block;
+    width: 73px;
+    height: 73px;
+    margin-bottom: 20px;	
+    background: no-repeat center;
+}
+
+.feature-list li:nth-child(1)::before {
+    background-image: url('../images/cube-1.svg');
+}
+
+.feature-list li:nth-child(2)::before {
+    background-image: url('../images/cube-2.svg');
+}
+
+.feature-list li:nth-child(3)::before {
+    background-image: url('../images/cube-3.svg');
+}
+
+.feature-list li:nth-child(4)::before {
+    background-image: url('../images/cube-4.svg');
+}
+
 /* ## Understanding and forecast */
 .section-understanding {
     position: relative;
