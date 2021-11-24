@@ -94,10 +94,8 @@ hr {
 
 /* # BOOTSTRAP */
 
-
-
 .form-control {
-    height: calc(1.5em  + 1.5rem + 2px);
+    height: calc(1.5em + 1.5rem + 2px);
     padding: 0.75rem 1rem;
     border-radius: 0.25rem;
 }
@@ -123,7 +121,6 @@ hr {
 textarea.form-control {
     min-height: 122px;
 }
-
 
 /* # COLORS */
 
@@ -199,6 +196,24 @@ textarea.form-control {
 /* ## Links */
 
 /* ## Forms */
+
+/* ## Responsive media */
+
+.responsive-media > picture {
+    position: relative;
+    display: block;
+    max-width: 100%;
+    height: 0;
+    padding-top: 55.25%;
+}
+
+.responsive-media > picture > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 /* ## Site Header */
 
@@ -455,7 +470,6 @@ textarea.form-control {
     font-size: 1.5rem;
 }
 
-
 /* # SECTIONS */
 
 /* ## Common */
@@ -503,7 +517,22 @@ textarea.form-control {
     padding-top: 0;
 }
 
-/* Contact us */
+/* ## Summary */
+
+.section-summary p:first-child {
+    /* position: relative; */
+}
+
+.section-summary p:first-child::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 25%;
+    border-top: 6px solid #647dff;
+}
+
+/* ## Contact us */
 
 .contact-form {
     position: relative;
@@ -534,7 +563,8 @@ textarea.form-control {
     background: url('../images/arrow-right.svg') no-repeat center;
 }
 
-/* ## Section features */
+/* ## Features */
+
 .feature-list li {
     font-size: 1.3125rem;
 }
@@ -544,7 +574,7 @@ textarea.form-control {
     display: block;
     width: 73px;
     height: 73px;
-    margin-bottom: 20px;	
+    margin-bottom: 20px;
     background: no-repeat center;
 }
 
@@ -565,6 +595,7 @@ textarea.form-control {
 }
 
 /* ## Understanding and forecast */
+
 .section-understanding {
     position: relative;
     padding-top: 90px;
@@ -589,4 +620,3 @@ textarea.form-control {
     font-weight: 700;
     font-style: italic;
 }
-

@@ -198,14 +198,13 @@
         border-radius: 5px;
     }
 
-    /* .main-nav > .nav-item > .nav-link:hover,
-    .main-nav > .nav-item > .nav-link:focus {
-        background-color: rgba(0, 0, 0, 0.3);
-    } */
-
     .section {
         padding-top: 120px;
         padding-bottom: 120px;
+    }
+
+    .section-summary .responsive-media {
+        margin-left: 0;
     }
 
     .section-understanding {
@@ -216,6 +215,10 @@
     .section-box {
         padding-top: 120px;
         padding-bottom: 120px;
+    }
+
+    .section-summary p:first-child::before {
+        content: none;
     }
 
     .contact-form::before {
@@ -238,6 +241,11 @@
     .main-nav > .nav-item > .nav-link {
         padding-right: 24px;
         padding-left: 24px;
+    }
+
+    .section-summary p:first-child::before {
+        content: '';
+        width: 15%;
     }
 }
 
