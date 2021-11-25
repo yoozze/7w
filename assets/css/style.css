@@ -563,6 +563,25 @@ textarea.form-control {
     padding-top: 74.074%;
 }
 
+/* ## Columns */
+
+.section-columns .section-title {
+    font-size: 1.5rem;
+    text-transform: none;
+}
+
+.section-columns .responsive-media > picture {
+    padding-top: 74.074%;
+}
+
+.section-columns .row {
+    margin-bottom: 60px;
+}
+
+.section-columns .row:last-child {
+    margin-bottom: 0;
+}
+
 /* ## Contact us */
 
 .contact-form {
