@@ -159,6 +159,98 @@ $(document).ready(function () {
         slidesToShow: 1,
     });
 
+    // # Concept visualization
+    // =======================
+
+    var $conceptVisualization = $('#concept-visualization');
+
+    if ($conceptVisualization.length) {
+        var $diagramWrapper = $conceptVisualization.find('> .concept-wrapper');
+        var $concept = $diagramWrapper.find('> .concept');
+        var $controls = $conceptVisualization.find('> .controls');
+        var setScrollState = function () {
+            var scrollLeft = $diagramWrapper.scrollLeft();
+
+            if (scrollLeft > 0) {
+                $conceptVisualization.addClass('left');
+            } else {
+                $conceptVisualization.removeClass('left');
+            }
+
+            var diff = $concept.innerWidth() - $diagramWrapper.innerWidth();
+
+            if (scrollLeft < diff) {
+                $conceptVisualization.addClass('right');
+            } else {
+                $conceptVisualization.removeClass('right');
+            }
+        };
+        var $buttons;
+
+        $diagramWrapper.on({
+            scroll: setScrollState,
+        });
+        $window.on({
+            'load2 resize2': function () {
+                var scrollable =
+                    $diagramWrapper[0].scrollWidth - $diagramWrapper[0].clientWidth > 8;
+
+                if (scrollable) {
+                    setScrollState();
+
+                    if (!$buttons) {
+                        $buttons = $('<button/><button/>').attr({
+                            class: 'btn',
+                        });
+                        $buttons
+                            .first()
+                            .append('<span class="sr-only">' + $controls.data('left') + '</span>')
+                            .on({
+                                click: function () {
+                                    $diagramWrapper.animate(
+                                        {
+                                            scrollLeft:
+                                                $diagramWrapper.scrollLeft() -
+                                                0.75 * $diagramWrapper.width(),
+                                        },
+                                        300,
+                                    );
+                                    return false;
+                                },
+                            });
+                        $buttons
+                            .last()
+                            .append('<span class="sr-only">' + $controls.data('right') + '</span>')
+                            .on({
+                                click: function () {
+                                    $diagramWrapper.animate(
+                                        {
+                                            scrollLeft:
+                                                $diagramWrapper.scrollLeft() +
+                                                0.75 * $diagramWrapper.width(),
+                                        },
+                                        300,
+                                    );
+                                    return false;
+                                },
+                            });
+                    }
+
+                    if (!$controls.data('initialized')) {
+                        $controls.data('initialized', true).append($buttons);
+                    }
+                } else {
+                    $conceptVisualization.removeClass('left right');
+                    $controls.data('initialized', false);
+
+                    if ($buttons) {
+                        $buttons.detach();
+                    }
+                }
+            },
+        });
+    }
+
     // Ensure custom `load2` event is always triggered.
     if (windowLoadEvent) {
         $window.trigger('load2', windowLoadEvent);

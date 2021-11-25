@@ -837,6 +837,148 @@ textarea.form-control {
     margin-bottom: 0;
 }
 
+/* ## Concept */
+
+.concept {
+    width: 100%;
+    min-width: 1500px;
+    padding: 18px;
+    font-size: 1.5rem;
+    background-color: #647dff;
+    border-radius: 3px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.concept table {
+    width: 100%;
+    color: #fff;
+}
+
+.concept th,
+.concept td {
+    padding: 20px;
+    text-align: center;
+    vertical-align: center;
+}
+
+.concept td {
+    padding: 30px;
+    color: #00002c;
+    background-color: #fff;
+}
+
+.concept th strong {
+    display: block;
+    text-transform: uppercase;
+}
+
+.concept th span {
+    color: #ccd5ff;
+}
+
+.concept td div {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.concept td div.check {
+    width: 30px;
+    height: 30px;
+    background: #1dbf44 url('../images/check.svg') no-repeat center;
+    border-radius: 50%;
+}
+
+.concept td div.ww {
+    width: 122px;
+    height: 23px;
+    background: url('../images/logo.svg') no-repeat center;
+}
+
+.concept-wrapper {
+    z-index: 0;
+    overflow-x: auto;
+}
+
+
+.viewport {
+    position: relative;
+    overflow: hidden;
+    padding-top: 60px;
+}
+
+.viewport::before,
+.viewport::after {
+    position: absolute;
+    top: 60px;
+    bottom: 8px;
+    left: -5px;
+    z-index: 1;
+    content: '';
+    width: 5px;
+    background: rgb(240, 244, 248);
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 3px 0px 6px 0 rgba(0, 0, 0, 0.12);
+    transition: visibility 0.3s ease, opacity 0.3s ease;
+}
+
+.viewport::after {
+    right: -5px;
+    left: auto;
+    box-shadow: -3px 0px 6px 0 rgba(0, 0, 0, 0.12);
+}
+
+.viewport.left::before,
+.viewport.right::after {
+    visibility: visible;
+    opacity: 1;
+}
+
+.viewport .controls {
+    position: relative;
+    top: -8px;
+    height: 28px;
+    padding-right: 3px;
+    padding-left: 3px;
+    margin-top: -28px;
+}
+
+.viewport .controls > .btn {
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    background: transparent url('../images/chevron-right.svg') no-repeat center;
+    background-size: 7px 10px;
+    border-radius: 50%;
+    visibility: hidden;
+    opacity: 0;
+    transition: background-color 0.3s ease, visibility 0.3s ease, opacity 0.3s ease;
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.viewport .controls > .btn:hover {
+    background-color: #e3e9f0;
+}
+
+.viewport .controls > .btn:focus {
+    background-color: #e3e9f0;
+    box-shadow: none !important;
+}
+
+.viewport .controls > .btn:last-child {
+    left: auto;
+    right: 0;
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+
+.viewport.left .controls > .btn:first-child,
+.viewport.right .controls > .btn:last-child {
+    visibility: visible;
+    opacity: 1;
+}
+
 /* ## Clients */
 
 .no-js .clients {
