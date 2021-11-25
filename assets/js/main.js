@@ -149,7 +149,7 @@ $(document).ready(function () {
     }
 
     // Clients slider
-    $('#clients').slick({
+    $('#clients-slider').slick({
         arrows: false,
         autoplaySpeed: 3000,
         centerMode: true,
@@ -161,11 +161,11 @@ $(document).ready(function () {
     });
 
     // Usecases slider
-    $('#usecases').slick({
+    $('#usecases-slider').slick({
+        // adaptiveHeight: true,
         arrows: false,
         autoplaySpeed: 5000,
-        centerMode: true,
-        variableWidth: false,
+        centerMode: false,
         dots: true,
         infinite: true,
         speed: 600,

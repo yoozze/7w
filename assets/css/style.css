@@ -1028,6 +1028,7 @@ textarea.form-control {
 
 .usecases .slick-slide {
     height: inherit !important;
+    margin-bottom: 8px;
 }
 
 .usecases .slick-dots {
