@@ -229,6 +229,7 @@ textarea.form-control {
     transition: background-color 0.3s ease, box-shadow 0.3s ease-in-out;
 }
 
+.no-js .site-header,
 .site-header.is-expanded,
 .site-header.is-scrolled {
     background-color: #fff;
@@ -348,6 +349,7 @@ textarea.form-control {
     transition: color 0.15s ease-in-out, opacity 0.15s ease-in-out;
 }
 
+.no-js .navbar-nav .nav-link,
 .is-expanded .navbar-nav .nav-link,
 .is-scrolled .navbar-nav .nav-link {
     color: #647dff;
