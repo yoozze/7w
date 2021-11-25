@@ -104,6 +104,49 @@ $(document).ready(function () {
         },
     });
 
+    // # Sliders
+    // =========
+
+    if (hasIntersectionObserver) {
+        var sliderObserver = new IntersectionObserver(
+            function (entries) {
+                entries.forEach(function (entry) {
+                    var $target = $(entry.target);
+
+                    if ($target.hasClass('slick-initialized')) {
+                        if (entry.isIntersecting) {
+                            $target.slick('slickPlay');
+                        } else {
+                            $target.slick('slickPause');
+                        }
+                    }
+                    refsVisible = entry.isIntersecting;
+                });
+            },
+            {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.8,
+            },
+        );
+
+        $('.slider').each(function (i, el) {
+            sliderObserver.observe(el);
+        });
+    }
+
+    // Clients slider
+    $('#clients').slick({
+        arrows: false,
+        autoplaySpeed: 3000,
+        centerMode: true,
+        variableWidth: true,
+        dots: false,
+        infinite: true,
+        speed: 600,
+        slidesToShow: 1,
+    });
+
     // Ensure custom `load2` event is always triggered.
     if (windowLoadEvent) {
         $window.trigger('load2', windowLoadEvent);

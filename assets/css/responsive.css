@@ -54,6 +54,10 @@
 
 /* Extra small devices (portrait phones, 480px and up) */
 @media (min-width: 480px) {
+    .clients .slider-item {
+        padding-right: 32px;
+        padding-left: 32px;
+    }
 }
 
 /* Extra small devices (portrait phones, less than 576px) */

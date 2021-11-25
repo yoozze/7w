@@ -470,6 +470,201 @@ textarea.form-control {
     font-size: 1.5rem;
 }
 
+/* ## Slider */
+
+.slider {
+    margin-right: -8px;
+    margin-left: -8px;
+}
+
+.slider-item {
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.js .slider-item:nth-child(n + 2) {
+    display: none;
+}
+
+.js .slider.slick-initialized .slider-item.slick-slide:nth-child(n) {
+    display: block;
+}
+
+.slider .slick-cloned img[loading='lazy'] {
+    opacity: 1;
+}
+
+/* ## Slick */
+
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.slick-list:focus {
+    outline: none;
+}
+
+.slick-list.dragging {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slick-track:before,
+.slick-track:after {
+    display: table;
+    content: '';
+}
+
+.slick-track:after {
+    clear: both;
+}
+
+.slick-loading .slick-track {
+    visibility: hidden;
+}
+
+.slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+
+[dir='rtl'] .slick-slide {
+    float: right;
+}
+
+.slick-slide img {
+    display: block;
+}
+
+.slick-slide.slick-loading img {
+    display: none;
+}
+
+.slick-slide.dragging img {
+    pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+    display: block;
+}
+
+.slick-loading .slick-slide {
+    visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+/* ## Slick theme */
+
+.slick-slide:focus {
+    outline: none;
+}
+
+.slick-dots {
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.slick-dots li {
+    display: inline-block;
+    padding: 0;
+    margin: 4px;
+}
+
+.slick-dots li button {
+    position: relative;
+    display: block;
+    width: 16px;
+    height: 16px;
+    padding: 5px;
+    font-size: 0;
+    line-height: 0;
+    cursor: pointer;
+    color: transparent;
+    background: transparent;
+    border: 0;
+    outline: none;
+}
+
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+    outline: none;
+}
+
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+    opacity: 1;
+}
+
+.slick-dots li button:before {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 8px;
+    height: 8px;
+    content: '';
+    background-color: transparent;
+    border: 1px solid #829ab1;
+    border-radius: 50%;
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.slick-dots li.slick-active button:before {
+    background-color: #bcccdc;
+    border-color: #bcccdc;
+}
+
 /* # SECTIONS */
 
 /* ## Common */
@@ -580,6 +775,40 @@ textarea.form-control {
 
 .section-columns .row:last-child {
     margin-bottom: 0;
+}
+
+/* ## Clients */
+
+.no-js .clients {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+.js .clients::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    right: -2px;
+    bottom: -10px;
+    left: -2px;
+    box-shadow: inset 0 0 30px 30px #fff;
+}
+
+.clients .slick-track {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.clients .slider-item {
+    padding: 16px;
 }
 
 /* ## Contact us */
