@@ -104,6 +104,17 @@ $(document).ready(function () {
         },
     });
 
+    var typed = new Typed('.typed', {
+        strings: [
+            'Artificial Intelligence powered Digital Twins',
+            'Making the complexity of the world managable',
+            'Giving you the power to look into the future ',
+            'Improved decision-making and increase resilience of your business',
+        ],
+        loop: true,
+        typeSpeed: 40,
+    });
+
     // # Sliders
     // =========
 
