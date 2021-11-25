@@ -1,5 +1,5 @@
 // Debug
-$.getScript('assets/js/debug.js');
+// $.getScript('assets/js/debug.js');
 
 /**
  * Hide dropdown for given navigation item.
@@ -162,7 +162,7 @@ $(document).ready(function () {
 
     // Usecases slider
     $('#usecases-slider').slick({
-        // adaptiveHeight: true,
+        adaptiveHeight: true,
         arrows: false,
         autoplaySpeed: 5000,
         centerMode: false,
