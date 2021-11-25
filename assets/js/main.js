@@ -147,6 +147,18 @@ $(document).ready(function () {
         slidesToShow: 1,
     });
 
+    // Usecases slider
+    $('#usecases').slick({
+        arrows: false,
+        autoplaySpeed: 5000,
+        centerMode: true,
+        variableWidth: false,
+        dots: true,
+        infinite: true,
+        speed: 600,
+        slidesToShow: 1,
+    });
+
     // Ensure custom `load2` event is always triggered.
     if (windowLoadEvent) {
         $window.trigger('load2', windowLoadEvent);

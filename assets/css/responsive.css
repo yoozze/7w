@@ -136,6 +136,11 @@
     .section-digital-twin .responsive-media {
         margin-bottom: -130px;
     }
+
+    .usecase {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -237,6 +242,11 @@
     .section-digital-twin .responsive-media {
         margin-top: -25%;
         margin-bottom: -25%;
+    }
+
+    .usecase {
+        padding-top: 120px;
+        padding-bottom: 120px;
     }
 
     .contact-form::before {

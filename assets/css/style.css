@@ -657,14 +657,14 @@ textarea.form-control {
     height: 8px;
     content: '';
     background-color: transparent;
-    border: 1px solid #829ab1;
+    border: 1px solid #647dff;
     border-radius: 50%;
     transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
 
 .slick-dots li.slick-active button:before {
-    background-color: #bcccdc;
-    border-color: #bcccdc;
+    background-color: #647dff;
+    border-color: #647dff;
 }
 
 /* # SECTIONS */
@@ -748,6 +748,64 @@ textarea.form-control {
     font-size: 1.3125rem;
 }
 
+/* ## Features */
+
+.feature-list li {
+    font-size: 1.3125rem;
+}
+
+.feature-list li::before {
+    content: '';
+    display: block;
+    width: 73px;
+    height: 73px;
+    margin-bottom: 20px;
+    background: no-repeat center;
+}
+
+.feature-list li:nth-child(1)::before {
+    background-image: url('../images/cube-1.svg');
+}
+
+.feature-list li:nth-child(2)::before {
+    background-image: url('../images/cube-2.svg');
+}
+
+.feature-list li:nth-child(3)::before {
+    background-image: url('../images/cube-3.svg');
+}
+
+.feature-list li:nth-child(4)::before {
+    background-image: url('../images/cube-4.svg');
+}
+
+/* ## Understanding and forecast */
+
+.section-understanding {
+    position: relative;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.section-understanding::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.6;
+    background: url('../images/crossroads.jpg') no-repeat center;
+    background-size: cover;
+    mix-blend-mode: soft-light;
+}
+
+.section-understanding .section-description {
+    font-size: 1.875rem;
+    font-weight: 700;
+    font-style: italic;
+}
+
 /* ## Digital Twin */
 
 .section-digital-twin .responsive-media {
@@ -813,6 +871,56 @@ textarea.form-control {
     padding: 16px;
 }
 
+/* ## Usecases */
+
+.no-js .usecases {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.usecases .slick-track {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.usecases .slick-slide {
+    height: inherit !important;
+}
+
+.usecases .slick-dots {
+    margin-top: 20px;
+    margin-bottom: -20px;
+}
+
+.usecase {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-size: 1.125rem;
+    background-color: #fff;
+    border: 1px solid #c5cdd7;
+    border-radius: 3px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.no-js .usecase {
+    margin-bottom: 50px;
+}
+
+.no-js .usecase:last-child {
+    margin-bottom: 0;
+}
+
+.usecase h3 {
+    font-size: 1.3125rem;
+}
+
+.usecase a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
 /* ## Contact us */
 
 .contact-form {
@@ -842,62 +950,4 @@ textarea.form-control {
     width: 29px;
     height: 14px;
     background: url('../images/arrow-right.svg') no-repeat center;
-}
-
-/* ## Features */
-
-.feature-list li {
-    font-size: 1.3125rem;
-}
-
-.feature-list li::before {
-    content: '';
-    display: block;
-    width: 73px;
-    height: 73px;
-    margin-bottom: 20px;
-    background: no-repeat center;
-}
-
-.feature-list li:nth-child(1)::before {
-    background-image: url('../images/cube-1.svg');
-}
-
-.feature-list li:nth-child(2)::before {
-    background-image: url('../images/cube-2.svg');
-}
-
-.feature-list li:nth-child(3)::before {
-    background-image: url('../images/cube-3.svg');
-}
-
-.feature-list li:nth-child(4)::before {
-    background-image: url('../images/cube-4.svg');
-}
-
-/* ## Understanding and forecast */
-
-.section-understanding {
-    position: relative;
-    padding-top: 90px;
-    padding-bottom: 90px;
-}
-
-.section-understanding::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    opacity: 0.6;
-    background: url('../images/crossroads.jpg') no-repeat center;
-    background-size: cover;
-    mix-blend-mode: soft-light;
-}
-
-.section-understanding .section-description {
-    font-size: 1.875rem;
-    font-weight: 700;
-    font-style: italic;
 }
