@@ -104,13 +104,15 @@ $(document).ready(function () {
         },
     });
 
+    var pageSubtitles = [];
+    $('#page-subtitles')
+        .find('li')
+        .each(function (i, el) {
+            pageSubtitles.push($(el).text());
+        });
+
     var typed = new Typed('.typed', {
-        strings: [
-            'Artificial Intelligence powered Digital Twins',
-            'Making the complexity of the world managable',
-            'Giving you the power to look into the future ',
-            'Improved decision-making and increase resilience of your business',
-        ],
+        strings: pageSubtitles,
         loop: true,
         typeSpeed: 40,
     });
