@@ -123,6 +123,11 @@
     /* .section-title {
         font-size: 3rem;
     } */
+
+    .usage-list div {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */

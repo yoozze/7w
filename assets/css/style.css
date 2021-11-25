@@ -519,10 +519,6 @@ textarea.form-control {
 
 /* ## Summary */
 
-.section-summary p:first-child {
-    /* position: relative; */
-}
-
 .section-summary p:first-child::before {
     content: '';
     position: absolute;
@@ -530,6 +526,29 @@ textarea.form-control {
     display: block;
     width: 25%;
     border-top: 6px solid #647dff;
+}
+
+/* ## Usage */
+
+.usage-list div {
+    padding: 40px 16px;
+    border-top: 3px solid transparent;
+    border-radius: 3px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    transform-origin: center 0;
+    transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.usage-list div:hover {
+    border-top-width: 3px;
+    border-top-color: #647dff;
+    box-shadow: 0 3px 16px rgba(0, 0, 0, 0.16);
+    -webkit-transform: translateY(3px) scale(1.01);
+    transform: translateY(3px) scale(1.02);
+}
+
+.usage-list h3 {
+    font-size: 1.3125rem;
 }
 
 /* ## Contact us */
