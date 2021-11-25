@@ -453,7 +453,7 @@ textarea.form-control {
     bottom: 0;
     left: 0;
     z-index: 0;
-    background: url('../images/banner.jpg') no-repeat center;
+    background: url('../images/night-sky.jpg') no-repeat center;
     background-size: cover;
     opacity: 0.34;
 }
@@ -549,6 +549,18 @@ textarea.form-control {
 
 .usage-list h3 {
     font-size: 1.3125rem;
+}
+
+/* ## Digital Twin */
+
+.section-digital-twin .responsive-media {
+    z-index: 1;
+    margin-bottom: -100px;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.16);
+}
+
+.section-digital-twin .responsive-media > picture {
+    padding-top: 74.074%;
 }
 
 /* ## Contact us */
