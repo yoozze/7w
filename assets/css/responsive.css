@@ -222,17 +222,13 @@
         padding-bottom: 128px;
     }
 
-    .section-summary .responsive-media {
+    .section-about .responsive-media {
         margin-left: 0;
     }
 
     .section-understanding {
         padding-top: 160px;
         padding-bottom: 160px;
-    }
-
-    .section-summary p:first-child::before {
-        content: none;
     }
 
     .section-digital-twin .responsive-media {
@@ -267,7 +263,7 @@
         padding-left: 24px;
     }
 
-    .section-summary p:first-child::before {
+    .section-about p:first-child::before {
         content: '';
         width: 15%;
     }

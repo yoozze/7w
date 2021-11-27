@@ -122,6 +122,20 @@ textarea.form-control {
     min-height: 122px;
 }
 
+/* ## Extensions */
+
+.object-contain {
+    object-fit: contain;
+}
+
+.object-cover {
+    object-fit: cover;
+}
+
+.object-fill {
+    object-fit: fill;
+}
+
 /* # COLORS */
 
 .color-primary {
@@ -713,9 +727,9 @@ textarea.form-control {
     margin-top: 32px;
 }
 
-/* ## Summary */
+/* ## About */
 
-.section-summary p:first-child::before {
+.section-about p:first-child::before {
     content: '';
     position: absolute;
     top: 0;
