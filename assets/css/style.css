@@ -443,7 +443,8 @@ textarea.form-control {
 
 .banner {
     position: relative;
-    height: 490px;
+    height: 400px;
+    padding-top: 42px;
     background-color: #00002c;
 }
 
