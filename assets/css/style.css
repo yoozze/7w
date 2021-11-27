@@ -422,7 +422,7 @@ textarea.form-control {
 }
 
 .footer-body {
-    padding-top: 30px;
+    padding-top: 32px;
 }
 
 .footer-nav .nav-link {
@@ -434,8 +434,8 @@ textarea.form-control {
 }
 
 .footer-foot {
-    /* padding-top: 20px; */
-    padding-bottom: 30px;
+    /* padding-top: 24px; */
+    padding-bottom: 32px;
     font-size: 0.875rem;
 }
 
@@ -444,7 +444,7 @@ textarea.form-control {
 .banner {
     position: relative;
     height: 400px;
-    padding-top: 42px;
+    padding-top: 48px;
     background-color: #00002c;
 }
 
@@ -462,7 +462,7 @@ textarea.form-control {
 }
 
 .page-title {
-    margin-bottom: 30px;
+    margin-bottom: 32px;
 }
 
 .page-title img {
@@ -674,12 +674,17 @@ textarea.form-control {
 /* ## Common */
 
 .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.section.small {
+    padding-top: 48px;
+    padding-bottom: 48px;
 }
 
 .section-head {
-    margin-bottom: 40px;
+    margin-bottom: 32px;
     text-align: center;
 }
 
@@ -694,7 +699,7 @@ textarea.form-control {
 .section-title {
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 1.875rem;
+    font-size: 1.5rem;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -705,15 +710,7 @@ textarea.form-control {
 }
 
 .section-title + .section-description {
-    margin-top: 30px;
-}
-
-.section-body {
-    padding-top: 90px;
-}
-
-.section-head + .section-body {
-    padding-top: 0;
+    margin-top: 32px;
 }
 
 /* ## Summary */
@@ -730,7 +727,7 @@ textarea.form-control {
 /* ## Usage */
 
 .usage-list div {
-    padding: 40px 16px;
+    padding: 32px 16px;
     border-top: 3px solid transparent;
     border-radius: 3px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
@@ -785,8 +782,8 @@ textarea.form-control {
 
 .section-understanding {
     position: relative;
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .section-understanding::before {
@@ -900,7 +897,6 @@ textarea.form-control {
     z-index: 0;
     overflow-x: auto;
 }
-
 
 .viewport {
     position: relative;
@@ -1038,8 +1034,8 @@ textarea.form-control {
 }
 
 .usecase {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 48px;
+    padding-bottom: 48px;
     font-size: 1.125rem;
     background-color: #fff;
     border: 1px solid #c5cdd7;
@@ -1048,7 +1044,7 @@ textarea.form-control {
 }
 
 .no-js .usecase {
-    margin-bottom: 50px;
+    margin-bottom: 48px;
 }
 
 .no-js .usecase:last-child {

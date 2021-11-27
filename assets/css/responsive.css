@@ -105,27 +105,33 @@
         padding-right: 64px;
     }
 
-    .section {
-        padding-top: 90px;
-        padding-bottom: 90px;
+    .section,
+    .section.large {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+
+    .section.small {
+        padding-top: 64px;
+        padding-bottom: 64px;
     }
 
     .section-understanding {
-        padding-top: 140px;
-        padding-bottom: 140px;
+        padding-top: 128px;
+        padding-bottom: 128px;
     }
 
-    .section-head {
-        margin-bottom: 60px;
+    .section:not(.small) .section-head {
+        margin-bottom: 48px;
     }
 
-    /* .section-title {
-        font-size: 3rem;
-    } */
+    .section-title {
+        font-size: 1.875rem;
+    }
 
     .usage-list div {
-        padding-top: 60px;
-        padding-bottom: 60px;
+        padding-top: 48px;
+        padding-bottom: 48px;
     }
 
     .section-digital-twin .responsive-media {
@@ -133,8 +139,8 @@
     }
 
     .usecase {
-        padding-top: 90px;
-        padding-bottom: 90px;
+        padding-top: 64px;
+        padding-bottom: 64px;
     }
 }
 
@@ -211,9 +217,9 @@
         border-radius: 5px;
     }
 
-    .section {
-        padding-top: 120px;
-        padding-bottom: 120px;
+    .section.large {
+        padding-top: 128px;
+        padding-bottom: 128px;
     }
 
     .section-summary .responsive-media {
@@ -221,13 +227,8 @@
     }
 
     .section-understanding {
-        padding-top: 190px;
-        padding-bottom: 190px;
-    }
-
-    .section-box {
-        padding-top: 120px;
-        padding-bottom: 120px;
+        padding-top: 160px;
+        padding-bottom: 160px;
     }
 
     .section-summary p:first-child::before {
@@ -240,8 +241,8 @@
     }
 
     .usecase {
-        padding-top: 120px;
-        padding-bottom: 120px;
+        padding-top: 96px;
+        padding-bottom: 96px;
     }
 
     .contact-form::before {

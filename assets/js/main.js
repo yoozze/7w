@@ -78,7 +78,7 @@ $(document).ready(function () {
     var $siteHeader = $('#site-header');
 
     $window.on('load2 scroll', function () {
-        $siteHeader.toggleClass('is-scrolled', $window.scrollTop() > 90);
+        $siteHeader.toggleClass('is-scrolled', $window.scrollTop() > 70);
     });
 
     // # Main navigation
