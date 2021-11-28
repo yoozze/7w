@@ -66,6 +66,17 @@
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+    .footer-contacts-label::after {
+        content: ':';
+    }
+
+    .footer-contacts div::after {
+        content: '|';
+    }
+
+    .footer-contacts div:last-child::after {
+        content: none;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
