@@ -118,6 +118,35 @@ $(document).ready(function () {
         typeSpeed: 40,
     });
 
+    // # Internal links
+    // ================
+
+    $('.internal-link').on('click', function () {
+        $('html, body').animate(
+            {
+                scrollTop: $($(this).attr('href')).offset().top - $siteHeader.height(),
+            },
+            500,
+        );
+
+        return false;
+    });
+
+    // # Forms
+    // =======
+
+    // Validation
+    $('.needs-validation').on({
+        submit: function (event) {
+            if (this.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+
+            $(this).addClass('was-validated');
+        },
+    });
+
     // # Sliders
     // =========
 
