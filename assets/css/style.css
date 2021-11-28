@@ -741,11 +741,6 @@ textarea.form-control {
 
 /* ## Usage */
 
-.section-usage .section-title {
-    font-size: 1.5rem;
-    text-transform: none;
-}
-
 .usage-list div {
     padding: 24px 16px;
     border-top: 3px solid transparent;
