@@ -245,6 +245,15 @@
         margin-bottom: -25%;
     }
 
+    .concept {
+        font-size: 1rem;
+    }
+
+    .concept td div.ww {
+        width: 61px;
+        height: 12px;
+    }
+
     .usecase {
         padding-top: 96px;
         padding-bottom: 96px;
@@ -281,6 +290,27 @@
         margin-top: -15%;
         margin-bottom: -30%;
     }
+
+    .concept {
+        font-size: 1.125rem;
+    }
+
+    .concept th {
+        padding: 16px;
+        font-weight: 700;
+    }
+
+    .concept th strong {
+        font-weight: 700;
+    }
+
+    .concept tbody th {
+        padding-right: 24px;
+    }
+
+    .concept td {
+        padding: 24px;
+    }
 }
 
 /* Extra large devices (1200px and up) */
@@ -293,6 +323,28 @@
 
 /* Extra^2 large devices (1440px and up) */
 @media (min-width: 1440px) {
+    .concept {
+        padding: 16px;
+        font-size: 1.25rem;
+    }
+
+    .concept th {
+        padding: 24px;
+    }
+
+    .concept tbody th {
+        padding-right: 40px;
+    }
+
+    .concept td div.check {
+        width: 30px;
+        height: 30px;
+    }
+
+    .concept td div.ww {
+        width: 81px;
+        height: 15px;
+    }
 }
 
 /* Extra^2 large devices (1440px and up) */

@@ -66,8 +66,8 @@ img {
 /* ## Webkit scrollbars */
 
 body *::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
+    width: 6px;
+    height: 6px;
 }
 
 body *::-webkit-scrollbar-track {
@@ -860,9 +860,9 @@ textarea.form-control {
 
 .concept {
     width: 100%;
-    min-width: 1500px;
-    padding: 18px;
-    font-size: 1.5rem;
+    min-width: 640px;
+    padding: 8px;
+    font-size: 0.875rem;
     background-color: #647dff;
     border-radius: 3px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
@@ -875,19 +875,32 @@ textarea.form-control {
 
 .concept th,
 .concept td {
-    padding: 20px;
+    padding: 8px;
     text-align: center;
-    vertical-align: center;
+    vertical-align: middle;
 }
 
 .concept td {
-    padding: 30px;
+    padding: 16px 8px;
     color: #00002c;
     background-color: #fff;
 }
 
+.concept th {
+    font-weight: 400;
+}
+
+.concept thead th {
+    vertical-align: top;
+}
+
+.concept tbody th {
+    padding-right: 16px;
+}
+
 .concept th strong {
     display: block;
+    font-weight: 400;
     text-transform: uppercase;
 }
 
@@ -901,15 +914,15 @@ textarea.form-control {
 }
 
 .concept td div.check {
-    width: 30px;
-    height: 30px;
+    width: 24px;
+    height: 24px;
     background: #1dbf44 url('../images/icons/check.svg') no-repeat center;
     border-radius: 50%;
 }
 
 .concept td div.ww {
-    width: 122px;
-    height: 23px;
+    width: 41px;
+    height: 8px;
     background: url('../images/icons/logo.svg') no-repeat center;
 }
 
@@ -976,11 +989,11 @@ textarea.form-control {
 }
 
 .viewport .controls > .btn:hover {
-    background-color: #e3e9f0;
+    background-color: #e6eaff;
 }
 
 .viewport .controls > .btn:focus {
-    background-color: #e3e9f0;
+    background-color: #e6eaff;
     box-shadow: none !important;
 }
 
