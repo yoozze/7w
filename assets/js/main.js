@@ -92,6 +92,7 @@ $(document).ready(function () {
         if (window.matchMedia('(min-width: 992px)').matches) {
             $siteHeader.toggleClass('is-expanded', false);
             $navbarContent.toggleClass('show', false);
+            $navbarToggler.addClass('collapsed');
         }
     });
 

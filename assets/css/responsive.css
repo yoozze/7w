@@ -161,10 +161,6 @@
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-    /* .page-wrapper {
-        padding-top: 90px;
-    } */
-
     .site-header {
         overflow: visible;
     }
@@ -215,6 +211,15 @@
         margin-left: 0;
         line-height: 1.5;
         border-radius: 5px;
+    }
+
+    .page-title img {
+        width: 398px;
+    }
+
+    .page-subtitle {
+        height: 33px;
+        font-size: 1.5rem;
     }
 
     .section.large {

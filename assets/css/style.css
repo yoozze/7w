@@ -481,11 +481,12 @@ textarea.form-control {
 
 .page-title img {
     display: block;
+    width: 300px;
 }
 
 .page-subtitle {
-    height: 33px;
-    font-size: 1.5rem;
+    height: 28px;
+    font-size: 1.25rem;
 }
 
 /* ## Slider */
