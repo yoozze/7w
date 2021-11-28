@@ -75,13 +75,13 @@ body *::-webkit-scrollbar-track {
 }
 
 body *::-webkit-scrollbar-thumb {
-    background-color: #c1c9d2;
-    border-radius: 4px;
+    background-color: #647dff;
+    -webkit-transition: background-color 0.15s ease;
     transition: background-color 0.15s ease;
 }
 
 body *::-webkit-scrollbar-thumb:hover {
-    background-color: #9fb3c8;
+    background-color: #4262ff;
 }
 
 /* ## Other */
@@ -783,19 +783,19 @@ textarea.form-control {
 }
 
 .feature-list li:nth-child(1)::before {
-    background-image: url('../images/cube-1.svg');
+    background-image: url('../images/icons/cube-1.svg');
 }
 
 .feature-list li:nth-child(2)::before {
-    background-image: url('../images/cube-2.svg');
+    background-image: url('../images/icons/cube-2.svg');
 }
 
 .feature-list li:nth-child(3)::before {
-    background-image: url('../images/cube-3.svg');
+    background-image: url('../images/icons/cube-3.svg');
 }
 
 .feature-list li:nth-child(4)::before {
-    background-image: url('../images/cube-4.svg');
+    background-image: url('../images/icons/cube-4.svg');
 }
 
 /* ## Understanding and forecast */
@@ -903,14 +903,14 @@ textarea.form-control {
 .concept td div.check {
     width: 30px;
     height: 30px;
-    background: #1dbf44 url('../images/check.svg') no-repeat center;
+    background: #1dbf44 url('../images/icons/check.svg') no-repeat center;
     border-radius: 50%;
 }
 
 .concept td div.ww {
     width: 122px;
     height: 23px;
-    background: url('../images/logo.svg') no-repeat center;
+    background: url('../images/icons/logo.svg') no-repeat center;
 }
 
 .concept-wrapper {
@@ -965,7 +965,7 @@ textarea.form-control {
     width: 28px;
     height: 28px;
     padding: 0;
-    background: transparent url('../images/chevron-right.svg') no-repeat center;
+    background: transparent url('../images/icons/chevron-right.svg') no-repeat center;
     background-size: 7px 10px;
     border-radius: 50%;
     visibility: hidden;
@@ -1095,7 +1095,7 @@ textarea.form-control {
     left: 5%;
     width: 120%;
     height: 135%;
-    background: url('../images/w.svg') no-repeat top left;
+    background: url('../images/icons/w.svg') no-repeat top left;
     background-size: cover;
 }
 
@@ -1110,5 +1110,5 @@ textarea.form-control {
     content: '';
     width: 29px;
     height: 14px;
-    background: url('../images/arrow-right.svg') no-repeat center;
+    background: url('../images/icons/arrow-right.svg') no-repeat center;
 }
