@@ -132,9 +132,9 @@
         padding-bottom: 128px;
     }
 
-    .section-understanding .section-description {
+    /* .section-understanding .section-description {
         font-size: 1.875rem;
-    }
+    } */
 
     .section:not(.small) .section-head {
         margin-bottom: 48px;
