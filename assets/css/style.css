@@ -158,6 +158,10 @@ textarea.form-control {
     background-color: #eff2f3 !important;
 }
 
+.bg-dark {
+    background-color: #00002c !important;
+}
+
 .bg-theme {
     background-color: #647dff !important;
 }
@@ -459,7 +463,6 @@ textarea.form-control {
     position: relative;
     height: 400px;
     padding-top: 48px;
-    background-color: #00002c;
 }
 
 .banner::before {
@@ -729,6 +732,10 @@ textarea.form-control {
 }
 
 /* ## About */
+
+.section-about .responsive-media {
+    margin-bottom: -64px;
+}
 
 .section-about p:first-child::before {
     content: '';

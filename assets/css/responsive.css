@@ -127,20 +127,24 @@
         padding-bottom: 64px;
     }
 
+    .section:not(.small) .section-head {
+        margin-bottom: 48px;
+    }
+
+    /* .section-title {
+        font-size: 1.875rem;
+    } */
+
+    .section-about .responsive-media {
+        margin-bottom: -96px;
+    }
+
     .section-understanding {
         padding-top: 128px;
         padding-bottom: 128px;
     }
 
     /* .section-understanding .section-description {
-        font-size: 1.875rem;
-    } */
-
-    .section:not(.small) .section-head {
-        margin-bottom: 48px;
-    }
-
-    /* .section-title {
         font-size: 1.875rem;
     } */
 
@@ -243,6 +247,8 @@
     }
 
     .section-about .responsive-media {
+        height: calc(100% + 192px) !important;
+        margin-top: -96px;
         margin-left: 0;
     }
 
