@@ -522,6 +522,10 @@ textarea.form-control {
     border-radius: 50%;
 }
 
+.color-light .text-box ul li::before {
+    background-color: #fff;
+}
+
 /* ## Slider */
 
 .slider {
