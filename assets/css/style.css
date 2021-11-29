@@ -24,7 +24,6 @@ h3,
 h4,
 h5,
 h6 {
-    /* font-family: 'Nunito Sans', sans-serif; */
     font-weight: 700;
     margin-top: 1em;
     margin-bottom: 0.5em;
@@ -189,8 +188,6 @@ textarea.form-control {
 
 .page-wrapper {
     position: relative;
-    /* overflow: hidden; */
-    /* padding-top: 70px; */
 }
 
 /* ## Buttons */
@@ -490,6 +487,39 @@ textarea.form-control {
 .page-subtitle {
     height: 28px;
     font-size: 1.25rem;
+}
+
+/* ## Text Box */
+
+.text-box ul {
+    padding-left: 15px;
+}
+
+.text-box ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.text-box ul li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 8px;
+}
+
+.text-box ul li:last-child {
+    margin-bottom: 0;
+}
+
+.text-box ul li::before {
+    position: absolute;
+    top: calc(1.375em / 2);
+    left: 0;
+    width: 5px;
+    height: 5px;
+    content: '';
+    margin-top: -3px;
+    background-color: #002b40;
+    border-radius: 50%;
 }
 
 /* ## Slider */
@@ -1059,7 +1089,7 @@ textarea.form-control {
 }
 
 .usecases .slick-slide {
-    height: inherit !important;
+    /* height: inherit !important; */
     margin-bottom: 8px;
 }
 
@@ -1069,20 +1099,19 @@ textarea.form-control {
 }
 
 .usecase {
-    padding-top: 48px;
-    padding-bottom: 48px;
-    font-size: 1.125rem;
+    padding-top: 24px;
+    padding-bottom: 24px;
     background-color: #fff;
     border: 1px solid #c5cdd7;
     border-radius: 3px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 }
 
-.no-js .usecase {
-    margin-bottom: 48px;
+.no-js .usecases .slider-item {
+    margin-bottom: 32px;
 }
 
-.no-js .usecase:last-child {
+.no-js .usecases .slider-item:last-child {
     margin-bottom: 0;
 }
 
@@ -1091,7 +1120,7 @@ textarea.form-control {
 }
 
 .usecase a {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;

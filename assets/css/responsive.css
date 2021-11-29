@@ -77,6 +77,11 @@
     .footer-contacts div:last-child::after {
         content: none;
     }
+
+    .usecase {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -157,9 +162,13 @@
         margin-bottom: -130px;
     }
 
-    .usecase {
-        padding-top: 64px;
-        padding-bottom: 64px;
+    /* .usecase {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    } */
+
+    .no-js .usecases .slider-item {
+        margin-bottom: 48px;
     }
 }
 
@@ -272,8 +281,8 @@
     }
 
     .usecase {
-        padding-top: 96px;
-        padding-bottom: 96px;
+        padding-top: 64px;
+        padding-bottom: 64px;
     }
 
     .contact-form::before {
