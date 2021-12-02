@@ -1144,10 +1144,10 @@ textarea.form-control {
 
 .section-live-news iframe {
     position: absolute;
-    top: -2px;
-    left: -11px;
-    width: calc(100% + 17px);
-    height: calc(100% + 16px);
+    top: -3px;
+    left: -12px;
+    width: calc(100% + 19px);
+    height: calc(100% + 19px);
 }
 
 /* ## Contact us */
