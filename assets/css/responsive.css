@@ -58,6 +58,10 @@
         padding-right: 32px;
         padding-left: 32px;
     }
+
+    .section-live-news .responsive-media picture {
+        padding-top: 150%;
+    }
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -81,6 +85,10 @@
     .usecase {
         padding-top: 48px;
         padding-bottom: 48px;
+    }
+
+    .section-live-news .responsive-media picture {
+        padding-top: 120%;
     }
 }
 
@@ -164,6 +172,10 @@
 
     .no-js .usecases .slider-item {
         margin-bottom: 48px;
+    }
+
+    .section-live-news .responsive-media picture {
+        padding-top: 100%;
     }
 }
 
@@ -285,6 +297,10 @@
         width: 111%;
         height: 150%;
     }
+
+    .section-live-news .responsive-media picture {
+        padding-top: 80%;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -332,6 +348,10 @@
     .concept td {
         padding: 24px;
     }
+
+    .section-live-news .responsive-media picture {
+        padding-top: 60%;
+    }
 }
 
 /* Extra large devices (1200px and up) */
@@ -365,6 +385,10 @@
     .concept td div.ww {
         width: 81px;
         height: 15px;
+    }
+
+    .section-live-news .responsive-media picture {
+        padding-top: 50%;
     }
 }
 
