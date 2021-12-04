@@ -36,6 +36,12 @@ function scrollIntoView($el, duration, adjust) {
     );
 }
 
+AOS.init({
+    once: true,
+    offset: 200,
+    duration: 450,
+});
+
 var $window = $(window);
 var hasIntersectionObserver =
     'IntersectionObserver' in window && 'IntersectionObserverEntry' in window;
