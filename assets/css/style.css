@@ -901,7 +901,7 @@ textarea.form-control {
     font-size: 0.875rem;
     background-color: #647dff;
     border-radius: 3px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16); */
 }
 
 .concept table {
