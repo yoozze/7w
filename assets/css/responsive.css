@@ -90,6 +90,18 @@
     .section-live-news .responsive-media picture {
         padding-top: 120%;
     }
+
+    .usecase .logo-bloomberg {
+        width: 250px;
+    }
+
+    .usecase .logo-bt {
+        width: 150px;
+    }
+
+    .usecase .logo-oecd {
+        width: 250px;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -300,6 +312,18 @@
 
     .section-live-news .responsive-media picture {
         padding-top: 80%;
+    }
+
+    .usecase .logo-bloomberg {
+        width: 398px;
+    }
+
+    .usecase .logo-bt {
+        width: 212px;
+    }
+
+    .usecase .logo-oecd {
+        width: 398px;
     }
 }
 

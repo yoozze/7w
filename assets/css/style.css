@@ -1130,6 +1130,18 @@ textarea.form-control {
     text-decoration: none;
 }
 
+.usecase .logo-bloomberg {
+    width: 200px;
+}
+
+.usecase .logo-bt {
+    width: 123px;
+}
+
+.usecase .logo-oecd {
+    width: 200px;
+}
+
 /* ## Live news */
 
 .section-live-news .responsive-media {
