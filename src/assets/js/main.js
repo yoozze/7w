@@ -146,10 +146,37 @@ $(document).ready(function () {
         submit: function (event) {
             if (this.checkValidity() === false) {
                 event.preventDefault();
-                event.stopPropagation();
+                event.stopImmediatePropagation();
             }
 
             $(this).addClass('was-validated');
+        },
+    });
+
+    var $contactForm = $('#contact-form');
+    $contactForm.on({
+        submit: function (event) {
+            event.preventDefault();
+
+            var form = $(this);
+            var url = form.attr('action');
+
+            $.ajax({
+                type: 'POST',
+                url: url,
+                data: form.serialize(),
+                success: function (data) {
+                    $formCol = $contactForm.find('> div');
+
+                    if (data.error) {
+                        if (typeof data.error === 'string') {
+                            $formCol.prepend('<p class="alert alert-danger" role="alert">' + data.error + '</p>');
+                        }
+                    } else {
+                        $formCol.prepend('<p class="alert alert-success" role="alert">Your message has been sent successfuly.</p>');
+                    }
+                },
+            });
         },
     });
 

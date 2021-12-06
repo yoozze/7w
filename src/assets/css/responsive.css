@@ -82,6 +82,10 @@
         content: none;
     }
 
+    .section-about .responsive-media picture {
+        padding-top: 80%;
+    }
+
     .usecase {
         padding-top: 48px;
         padding-bottom: 48px;
@@ -159,6 +163,14 @@
     /* .section-title {
         font-size: 1.875rem;
     } */
+
+    .section-about hr {
+        margin-bottom: 48px;
+    }
+
+    .section-about .responsive-media picture {
+        padding-top: 55.25%;
+    }
 
     .section-about .responsive-media {
         margin-bottom: -96px;
@@ -354,8 +366,7 @@
         padding-left: 24px;
     }
 
-    .section-about p:first-child::before {
-        content: '';
+    .section-about hr {
         width: 15%;
     }
 

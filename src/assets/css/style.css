@@ -135,6 +135,14 @@ textarea.form-control {
     object-fit: fill;
 }
 
+/* # AOS */
+
+.no-js [data-aos] {
+    opacity: unset;
+    transform: unset;
+    transition: unset;
+}
+
 /* # COLORS */
 
 .color-primary {
@@ -256,6 +264,7 @@ textarea.form-control {
     transition: padding 0.3s ease;
 }
 
+.no-js .site-header .navbar,
 .site-header.is-scrolled .navbar {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -487,6 +496,18 @@ textarea.form-control {
 .page-subtitle {
     height: 28px;
     font-size: 1.25rem;
+}
+
+.no-js .page-subtitle {
+    display: none;
+}
+
+.no-js li.page-subtitle {
+    display: block;
+}
+
+.js .page-subtitles {
+    display: none;
 }
 
 /* ## Text Box */
@@ -767,16 +788,19 @@ textarea.form-control {
 
 /* ## About */
 
+.section-about .responsive-media picture {
+    padding-top: 120%;
+}
+
 .section-about .responsive-media {
     margin-bottom: -64px;
 }
 
-.section-about p:first-child::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    display: block;
+.section-about hr {
     width: 25%;
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 32px;
     border-top: 6px solid #647dff;
 }
 
@@ -885,7 +909,7 @@ textarea.form-control {
 }
 
 .section-columns .row {
-    margin-bottom: 60px;
+    margin-bottom: 64px;
 }
 
 .section-columns .row:last-child {
@@ -1144,6 +1168,10 @@ textarea.form-control {
 
 /* ## Live news */
 
+.no-js .section-live-news {
+    display: none !important;
+}
+
 .section-live-news .responsive-media {
     overflow: hidden;
     border: 1px solid #dfdfdf;
@@ -1163,6 +1191,10 @@ textarea.form-control {
 }
 
 /* ## Contact us */
+
+.no-js .section-contact {
+    display: none;
+}
 
 .contact-form {
     position: relative;
