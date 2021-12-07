@@ -169,11 +169,9 @@ $(document).ready(function () {
                 data: $form.serialize(),
                 success: function (data) {
                     $formCol = $contactForm.find('> div');
-                    $contactForm.find('.alert').remove();
+                    $contactForm.removeClass('was-validated').find('.alert').remove();
 
                     if (data.error) {
-                        $contactForm.removeClass('was-validated');
-
                         if (typeof data.error === 'string') {
                             $formCol.prepend(
                                 '<p class="alert alert-danger" role="alert">' + data.error + '</p>',
@@ -185,8 +183,9 @@ $(document).ready(function () {
                             });
                         }
                     } else {
+                        $contactForm.trigger('reset');
                         $formCol.prepend(
-                            '<p class="alert alert-success" role="alert">Your message has been sent successfuly.</p>',
+                            '<p class="alert alert-success" role="alert">Thank you for contacting us, we will get back to you as soon as possible.</p>',
                         );
                     }
                 },
