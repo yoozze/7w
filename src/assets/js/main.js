@@ -144,6 +144,8 @@ $(document).ready(function () {
     // Validation
     $('.needs-validation').on({
         submit: function (event) {
+            $contactForm.find('.form-control').removeClass('is-invalid');
+
             if (this.checkValidity() === false) {
                 event.preventDefault();
                 event.stopImmediatePropagation();
@@ -158,27 +160,54 @@ $(document).ready(function () {
         submit: function (event) {
             event.preventDefault();
 
-            var form = $(this);
-            var url = form.attr('action');
+            var $form = $(this);
+            var url = $form.attr('action');
 
             $.ajax({
                 type: 'POST',
                 url: url,
-                data: form.serialize(),
+                data: $form.serialize(),
                 success: function (data) {
                     $formCol = $contactForm.find('> div');
+                    $contactForm.find('.alert').remove();
 
                     if (data.error) {
+                        $contactForm.removeClass('was-validated');
+
                         if (typeof data.error === 'string') {
-                            $formCol.prepend('<p class="alert alert-danger" role="alert">' + data.error + '</p>');
+                            $formCol.prepend(
+                                '<p class="alert alert-danger" role="alert">' + data.error + '</p>',
+                            );
+                        } else {
+                            Object.keys(data.error).forEach(function (key) {
+                                var $control = $contactForm.find('.form-control[name=' + key + ']');
+                                $control.addClass('is-invalid').next().text(data.error[key]);
+                            });
                         }
                     } else {
-                        $formCol.prepend('<p class="alert alert-success" role="alert">Your message has been sent successfuly.</p>');
+                        $formCol.prepend(
+                            '<p class="alert alert-success" role="alert">Your message has been sent successfuly.</p>',
+                        );
                     }
                 },
             });
         },
     });
+
+    $contactForm
+        .find('.form-control')
+        .on({
+            keydown: function (event) {
+                var $control = $(this);
+                $control.removeClass('is-invalid');
+                console.log('control', $control);
+                $control.next().text($control.data('text'));
+            },
+        })
+        .each(function () {
+            var $control = $(this);
+            $control.data('text', $control.next().text());
+        });
 
     // # Sliders
     // =========

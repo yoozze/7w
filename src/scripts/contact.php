@@ -17,12 +17,11 @@ if (!empty($_POST)) {
     }
 
     if (empty($message)) {
-        $errors[] = ['message' => 'Message is required.'];
+        $errors += ['message' => 'Message is required.'];
     }
 
     if (empty($errors)) {
-        // $toEmail = 'info@7w.ai';
-        $toEmail = 'ezzooy@gmail.com';
+        $toEmail = 'info@7w.ai';
         $emailSubject = 'New email from your contant form';
         $headers = ['From' => $email, 'Reply-To' => $email, 'Content-type' => 'text/html; charset=iso-8859-1'];
 
