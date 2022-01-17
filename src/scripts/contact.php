@@ -22,7 +22,7 @@ if (!empty($_POST)) {
 
     if (empty($errors)) {
         $toEmail = 'info@7w.ai';
-        $emailSubject = 'New email from your contant form';
+        $emailSubject = 'New email from your contact form';
         $headers = ['From' => $email, 'Reply-To' => $email, 'Content-type' => 'text/html; charset=iso-8859-1'];
 
         $bodyParagraphs = ["Name: {$name}", "Email: {$email}", "Message:", $message];
